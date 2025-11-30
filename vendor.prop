@@ -290,6 +290,9 @@ ro.vendor.mtk_trustonic_tee_support=1
 
 # USB
 vendor.usb.product_string=Realme GT Neo 3
+persist.sys.usb.config=adb
+persist.service.adb.enable=1
+persist.adb.nonblocking_ffs=1
 
 # Verity
 ro.apk_verity.mode=2
