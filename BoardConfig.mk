@@ -1,10 +1,7 @@
-#
 # SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
-PRODUCT_BROKEN_VERIFY_ELF_PREBUILTS := true
-PRODUCT_BROKEN_CHECK_ELF_FILES := true
 BUILD_BROKEN_DUP_RULES := true
 
 DEVICE_PATH := device/realme/lisaa
@@ -24,9 +21,6 @@ TARGET_NO_BOOTLOADER := true
 
 # Display
 TARGET_SCREEN_DENSITY := 480
-
-# FOD
-$(call soong_config_set,surfaceflinger,udfps_lib,//hardware/oplus:libudfps_extension.oplus)
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
