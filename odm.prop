@@ -24,6 +24,9 @@ persist.vendor.vonr_setting_support=1
 ro.soc.manufacturer=Mediatek
 ro.soc.model=MT6895
 
+# Picture Quality
+persist.vendor.sys.pq.disp.ccorr.silky.brightness=1
+
 # Project
 ro.product.hw=21642
 ro.separate.soft=21642
