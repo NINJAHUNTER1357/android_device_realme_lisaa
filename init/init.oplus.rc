@@ -115,3 +115,6 @@ on property:ro.boot.prjname=*
 on property:sys.boot_completed=1
     # USB
     write /sys/devices/virtual/oplus_chg/usb/otg_switch 1
+
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
