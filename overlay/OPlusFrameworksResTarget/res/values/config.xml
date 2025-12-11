@@ -126,7 +126,7 @@
     <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
     <integer-array name="config_udfps_sensor_props" translatable="false" >
         <item>540</item>  <!-- <item>sensorLocationX</item> -->
-        <item>2184</item> <!-- <item>sensorLocationY</item> -->
+        <item>2100</item> <!-- <item>sensorLocationY</item> -->
         <item>94</item>  <!-- <item>sensorRadius</item> -->
     </integer-array>
 
@@ -406,6 +406,9 @@
     <!-- Whether the device enable the non-standalone (NSA) mode of 5G NR.-->
     <bool name="config_telephony5gNonStandalone">true</bool>
 
+    <!-- Whether device implements proximity sensor based checks to prevent
+         accidental unlocks when the screen is off. -->
+    <bool name="config_proximityCheckOnFpsUnlock">true</bool>
 
     <!-- A string config in svg path format for the main display shape.
          (@see https://www.w3.org/TR/SVG/paths.html#PathData).
