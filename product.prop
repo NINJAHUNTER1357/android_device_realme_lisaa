@@ -7,9 +7,6 @@ persist.sys.fuse.passthrough.enable=true
 # GPS
 ro.oplus.mtk_gps_mpe=1
 
-# SystemUI
-persist.sysui.disableBlur=true
-
 # Radio
 persist.sys.oplus.radio.mtk_sa_e5gopt_option = 2
 persist.vendor.entitlement_enabled=1
