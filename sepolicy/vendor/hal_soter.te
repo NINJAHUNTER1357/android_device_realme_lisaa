@@ -1,0 +1,6 @@
+binder_call(hal_soter_client, hal_soter_server)
+binder_call(hal_soter_client, servicemanager)
+binder_call(hal_soter_server, hal_soter_client)
+binder_call(hal_soter_server, servicemanager)
+
+hal_attribute_service(hal_soter, hal_soter_service)

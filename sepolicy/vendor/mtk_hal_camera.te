@@ -1,0 +1,15 @@
+allow mtk_hal_camera hal_oplus_osense_aidl_service:service_manager find;
+allow mtk_hal_camera hal_oplus_urcc_aidl_service:service_manager find;
+
+allow mtk_hal_camera persist_camera_file:dir rw_dir_perms;
+allow mtk_hal_camera persist_camera_file:file create_file_perms;
+allow mtk_hal_camera persist_data_file:dir search;
+
+allow mtk_hal_camera vendor_proc_oplus_camera:file rw_file_perms;
+
+r_dir_file(mtk_hal_camera, proc_version)
+r_dir_file(mtk_hal_camera, vendor_proc_oplus_version)
+
+get_prop(mtk_hal_camera, exported_system_prop)
+set_prop(mtk_hal_camera, vendor_oplus_camera_prop)
+set_prop(mtk_hal_camera, vendor_oplus_touch_prop)

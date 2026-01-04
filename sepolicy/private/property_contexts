@@ -1,0 +1,43 @@
+# Audio
+sys.oplus.mm.            u:object_r:system_oplus_audio_prop:s0
+audio.tuning.def_path    u:object_r:system_oplus_audio_prop:s0
+
+# Camera
+demo.                            u:object_r:exported_system_prop:s0
+oplus.camera.                    u:object_r:exported_system_prop:s0
+oplus.switch.                    u:object_r:exported_system_prop:s0
+persist.sys.camera.lao.enable    u:object_r:exported_system_prop:s0
+ro.oplus.system.camera.          u:object_r:exported_system_prop:s0
+sys.multiwin_for_camera          u:object_r:exported_system_prop:s0
+
+# Display
+persist.oplus.display.vrr.adfr     u:object_r:exported_system_prop:s0
+ro.oplus.display.                  u:object_r:exported_system_prop:s0
+ro.oplus.backlight.threhold        u:object_r:exported_system_prop:s0
+ro.oplus.bl.disable.dre.enable     u:object_r:exported_system_prop:s0
+ro.oplus.silky.brightness.delay    u:object_r:exported_system_prop:s0
+
+# Fingerprint
+oplus.fingerprint.    u:object_r:system_fingerprint_prop:s0
+gf.debug.             u:object_r:system_fingerprint_prop:s0
+
+# Logging
+persist.camera.assert.panic         u:object_r:exported_system_prop:s0
+persist.sys.assert.panic            u:object_r:exported_system_prop:s0
+
+# GPS
+ro.oplus.mtk_gps_L1L5    u:object_r:exported_system_prop:s0
+ro.oplus.mtk_gps_mpe     u:object_r:exported_system_prop:s0
+
+# Modem
+ro.oplus.operator    u:object_r:exported_system_prop:s0
+
+# Touch
+persist.sys.tpic.    u:object_r:system_oplus_touch_prop:s0
+
+# Version
+ro.build.version.svn    u:object_r:system_oplus_project_prop:s0
+ro.oplus.image.         u:object_r:system_oplus_project_prop:s0
+ro.oplus.version.       u:object_r:system_oplus_project_prop:s0
+ro.product.hw           u:object_r:system_oplus_project_prop:s0
+ro.separate.soft        u:object_r:system_oplus_project_prop:s0

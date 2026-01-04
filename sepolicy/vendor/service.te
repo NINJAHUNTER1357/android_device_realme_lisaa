@@ -1,0 +1,20 @@
+# CommonsDcs
+type hal_oplus_commondcs_aidl_service, hal_service_type, service_manager_type;
+
+# OSENSE
+type hal_oplus_osense_aidl_service, hal_service_type, service_manager_type;
+
+# Performance
+type hal_oplus_performance_aidl_service, hal_service_type, service_manager_type;
+
+# Sensors
+type hal_oplusSensor_aidl_service, hal_service_type, service_manager_type;
+
+# Soter
+type hal_soter_service, hal_service_type, service_manager_type;
+
+# Touch
+type hal_oplus_touch_aidl_service, hal_service_type, service_manager_type;
+
+# URCC
+type hal_oplus_urcc_aidl_service, hal_service_type, service_manager_type;

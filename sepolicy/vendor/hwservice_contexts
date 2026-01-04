@@ -1,0 +1,15 @@
+# Display
+vendor.display.PanelChaplin::IPanelChaplin                         u:object_r:hal_graphics_composer_hwservice:s0
+vendor.oplus.hardware.cwb::ICwbService                             u:object_r:hal_graphics_composer_hwservice:s0
+vendor.oplus.hardware.displaypanelfeature::IDisplayPanelFeature    u:object_r:hal_graphics_composer_hwservice:s0
+vendor.pixelworks.hardware.display::IIris                          u:object_r:hal_graphics_composer_hwservice:s0
+vendor.pixelworks.hardware.feature::IIrisFeature                   u:object_r:hal_graphics_composer_hwservice:s0
+
+# Fingerprint
+vendor.oplus.hardware.biometrics.fingerprint::IBiometricsFingerprint    u:object_r:hal_fingerprint_hwservice:s0
+
+# ORMS
+vendor.oplus.hardware.orms::IOrmsHalProxy    u:object_r:vendor_hal_orms_hwservice:s0
+
+# Osense
+vendor.oplus.hardware.osense.client::IOsenseHalReporter    u:object_r:vendor_hal_osense_hwservice:s0

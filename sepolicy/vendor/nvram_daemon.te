@@ -1,0 +1,3 @@
+r_dir_file(nvram_daemon, vendor_proc_oplus_audio)
+r_dir_file(nvram_daemon, vendor_proc_oplus_region)
+r_dir_file(nvram_daemon, vendor_proc_oplus_version)

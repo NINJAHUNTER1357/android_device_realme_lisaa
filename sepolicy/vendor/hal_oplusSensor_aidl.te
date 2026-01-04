@@ -1,0 +1,29 @@
+type hal_oplusSensor_aidl, domain;
+binder_use(hal_oplusSensor_aidl)
+
+hal_server_domain(hal_oplusSensor_aidl, vendor_hal_oplusSensor)
+
+type hal_oplusSensor_aidl_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_oplusSensor_aidl)
+
+binder_call(vendor_hal_oplusSensor_client, vendor_hal_oplusSensor_server)
+
+hal_attribute_service(vendor_hal_oplusSensor, hal_oplusSensor_aidl_service)
+
+allow vendor_hal_oplusSensor_client hal_oplusSensor_aidl_service:service_manager find;
+
+allow hal_oplusSensor_aidl hf_manager_device:chr_file rw_file_perms;
+allow hal_oplusSensor_aidl ssc_interactive_device:chr_file rw_file_perms;
+
+allow hal_oplusSensor_aidl oplus_block_device:blk_file r_file_perms;
+allow hal_oplusSensor_aidl vendor_reserve_partition:blk_file r_file_perms;
+
+allow hal_oplusSensor_aidl block_device:dir search;
+allow hal_oplusSensor_aidl mnt_vendor_file:dir search;
+allow hal_oplusSensor_aidl persist_data_file:dir search;
+
+r_dir_file(hal_oplusSensor_aidl, nvcfg_file)
+r_dir_file(hal_oplusSensor_aidl, persist_engineer_file)
+r_dir_file(hal_oplusSensor_aidl, vendor_proc_oplus_sensor_feature)
+r_dir_file(hal_oplusSensor_aidl, vendor_proc_oplus_version)
+rw_dir_file(hal_oplusSensor_aidl, vendor_proc_oplus_als_file)

@@ -1,0 +1,14 @@
+# IR
+type oplus_consumerir_device, dev_type;
+
+# Reserve
+type vendor_reserve_partition, dev_type;
+
+# Sensor
+type ssc_interactive_device, dev_type;
+
+# Touch
+type oplus_touchdaemon_device, dev_type;
+
+# Vibrator
+type aac_richtap_device, dev_type;

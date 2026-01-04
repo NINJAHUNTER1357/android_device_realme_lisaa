@@ -1,0 +1,68 @@
+# Alert Slider
+/vendor/bin/tri-state-key-calibrate    u:object_r:tri-state-key-calibrate_exec:s0
+
+# Camera
+/mnt/vendor/persist/camera(/.*)?          u:object_r:persist_camera_file:s0
+/(odm|vendor/odm)/bin/crossbuild(/.*)?    u:object_r:vendor_bin_crossbuild_file:s0
+
+# Display
+/data/vendor/display/(/.*)?                                                       u:object_r:vendor_display_vendor_data_file:s0
+/dev/oplus_display                                                                u:object_r:graphics_device:s0
+
+# Engineering
+/mnt/vendor/persist/engineermode(/.*)?    u:object_r:persist_engineer_file:s0
+
+# Face
+/data/vendor_de/[0-9]+/faceunlock(/.*)?                                            u:object_r:face_vendor_data_file:s0
+/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.biometrics\.face@1\.0-service    u:object_r:hal_face_default_exec:s0
+
+# Fingerprint
+/dev/fingerprint_dev                                                                             u:object_r:fingerprint_device:s0
+/data/vendor/fingerprint(_ori)?(/.*)?                                                            u:object_r:fingerprint_vendor_data_file:s0
+/mnt/vendor/persist/fingerprint(/.*)?                                                            u:object_r:oplus_fingerprint_file:s0
+/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.biometrics\.fingerprint@2\.1-service_uff       u:object_r:hal_fingerprint_default_exec:s0
+/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.biometrics\.fingerprint@2\.1-service       u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.oplus    u:object_r:hal_fingerprint_default_exec:s0
+/dev/jiiov_fp   u:object_r:fingerprint_device:s0
+
+
+# Firmwares
+/vendor/firmware(/.*)?    u:object_r:vendor_configs_file:s0
+/odm/firmware(/.*)?       u:object_r:vendor_configs_file:s0
+
+# IR
+/vendor/bin/hw/android\.hardware\.ir-service\.oplus    u:object_r:hal_ir_default_exec:s0
+/dev/oplus_consumer_ir                                 u:object_r:oplus_consumerir_device:s0
+
+# NFC
+/vendor/bin/hw/android\.hardware\.secure_element-service\.nxp    u:object_r:hal_secure_element_default_exec:s0
+/dev/nq-nci                                                      u:object_r:nfc_device:s0
+/dev/p73                                                         u:object_r:nfc_device:s0
+
+# Partitions
+/dev/block/platform/112b0000\.ufshci/by-name/oplus_custom    u:object_r:oplus_block_device:s0
+
+# Reserve
+/dev/block/platform/112b0000\.ufshci/by-name/oplusreserve[1-5]    u:object_r:vendor_reserve_partition:s0
+
+# Sensors
+/(odm|vendor/odm)/bin/hw/vendor-oplus-hardware-oplusSensor-V1-service    u:object_r:hal_oplusSensor_aidl_exec:s0
+/dev/ssc_interactive                                                     u:object_r:ssc_interactive_device:s0
+
+# Soter
+/vendor/bin/hw/vendor\.trustonic\.soter@1\.0-service    u:object_r:hal_soter_trustonic_exec:s0
+
+# Touch
+/(odm|vendor/odm)/bin/hw/vendor-oplus-hardware-touch-V2-service              u:object_r:hal_oplus_touch_aidl_exec:s0
+/(odm|vendor/odm)/bin/touchDaemon                                            u:object_r:hal_oplus_touchdaemon_exec:s0
+/vendor/bin/hw/vendor\.lineage\.touch-service\.oplus                    u:object_r:hal_lineage_touch_default_exec:s0
+/data/vendor/touch(/.*)?                                                     u:object_r:vendor_persist_oplus_touch_file:s0
+/data/vendor/touchconfig(/.*)?                                               u:object_r:vendor_persist_oplus_touch_file:s0
+/dev/socket/hidl2touchdaemon_client                                          u:object_r:oplus_touchdaemon_socket:s0
+/dev/socket/hidl2touchdaemon_server                                          u:object_r:oplus_touchdaemon_socket:s0
+/dev/tcm_hbp0                                                                u:object_r:oplus_touchdaemon_device:s0
+
+# Vibrator
+/dev/awinic_haptic                                                    u:object_r:aac_richtap_device:s0
+/vendor/bin/hw/android\.hardware\.vibrator\.service\.oplus-richtap    u:object_r:hal_vibrator_default_exec:s0
+/vendor/bin/hw/vendor.qti.hardware.vibrator.service                   u:object_r:hal_vibrator_default_exec:s0

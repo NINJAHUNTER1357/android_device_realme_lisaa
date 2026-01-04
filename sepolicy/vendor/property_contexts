@@ -1,0 +1,21 @@
+# Audio
+persist.vendor.audio.tuning.def_path    u:object_r:vendor_audio_tuning_prop:s0
+
+# Camera
+vendor.explorer.awb.    u:object_r:vendor_oplus_camera_prop:s0
+vendor.oplus.camera.    u:object_r:vendor_oplus_camera_prop:s0
+
+# Face
+persist.vendor.oplus.face.    u:object_r:vendor_face_prop:s0
+persist.vendor.face.          u:object_r:vendor_face_prop:s0
+
+# Fingerprint
+persist.vendor.fingerprint.    u:object_r:vendor_fingerprint_prop:s0
+persist.vendor.fp.             u:object_r:vendor_fingerprint_prop:s0
+persist.vendor.side.fp.        u:object_r:vendor_fingerprint_prop:s0
+vendor.fingerprint.            u:object_r:vendor_fingerprint_prop:s0
+
+# Touch
+vendor.debug.tpi.            u:object_r:vendor_oplus_touch_prop:s0
+vendor.oplus.touch.          u:object_r:vendor_oplus_touch_prop:s0
+vendor.touchdaemon.          u:object_r:vendor_oplus_touch_prop:s0
