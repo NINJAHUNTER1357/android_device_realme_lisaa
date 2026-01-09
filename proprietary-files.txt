@@ -1382,8 +1382,6 @@ odm/etc/sensor/sensor_config.json
 odm/etc/vintf/manifest/manifest_oplusSensor_aidl.xml
 odm/lib64/libhwm-oplus.so
 odm/lib64/vendor.oplus.hardware.oplusSensor-V1-ndk_platform.so
-vendor/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek
-vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc
 vendor/firmware/remoteproc_scp
 vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so
 vendor/lib64/hw/sensors.mediatek.V2.0.so;SYMLINK=vendor/lib64/hw/sensors.mt6895.so
