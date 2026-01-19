@@ -1,7 +1,5 @@
-#
 # SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
-#
 
 # Inherit from the custom device configuration.
 $(call inherit-product, device/realme/lisaa/device.mk)
@@ -24,5 +22,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=RMX3563 \
     SystemDevice=RED8BEL1 \
     SystemName=RMX3563  
-
-TARGET_ENABLE_BLUR := true

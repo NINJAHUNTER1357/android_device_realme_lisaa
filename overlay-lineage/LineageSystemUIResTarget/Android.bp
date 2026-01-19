@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "OPlusTelephonyResTarget",
-    device_specific: true,
+    name: "LineageSystemUIResTarget",
+    product_specific: true,
 }

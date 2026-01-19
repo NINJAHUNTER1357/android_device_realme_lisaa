@@ -28,8 +28,8 @@ ro.soc.model=MT6895
 persist.vendor.sys.pq.disp.ccorr.silky.brightness=1
 
 # Project
-ro.product.hw=21642
-ro.separate.soft=21642
+ro.product.hw=21862
+ro.separate.soft=21862
 
 # Sensor
 ro.vendor.oplus.sensor.report_brightness=true

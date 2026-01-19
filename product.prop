@@ -1,7 +1,4 @@
-# Animation
-persist.sys.activity_anim_perf_override=true
-
-# FUSE passthrough
+# FUSE
 persist.sys.fuse.passthrough.enable=true
 
 # GPS

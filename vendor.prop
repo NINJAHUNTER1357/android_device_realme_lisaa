@@ -289,7 +289,7 @@ ro.vendor.mtk_tee_gp_support=1
 ro.vendor.mtk_trustonic_tee_support=1
 
 # USB
-vendor.usb.product_string=Realme GT Neo 3
+vendor.usb.product_string=realme GT NEO 3
 persist.sys.usb.config=adb
 persist.service.adb.enable=1
 persist.adb.nonblocking_ffs=1
@@ -305,3 +305,6 @@ ro.vendor.wlan.gen=gen4m_6895
 
 # Zygote
 zygote.critical_window.minute=10
+
+#GPU
+persist.sys.phh.mtk_ged_kpi=1

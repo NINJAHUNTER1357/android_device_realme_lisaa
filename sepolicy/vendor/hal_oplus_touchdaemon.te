@@ -12,7 +12,8 @@ hal_attribute_service(vendor_hal_oplus_touchdaemon, touchDeamonBinder_service)
 
 allow hal_oplus_touchdaemon hal_oplus_touchdaemon:capability sys_nice;
 
-allow hal_oplus_touchdaemon hal_oplus_touch_aidl:binder call;
+#allow hal_oplus_touchdaemon hal_oplus_touch_aidl:binder call;
+#allow hal_oplus_touchdaemon hal_oplus_touch_aidl_service:binder call;
 
 allow hal_oplus_touchdaemon input_device:dir search;
 allow hal_oplus_touchdaemon input_device:chr_file rw_file_perms;

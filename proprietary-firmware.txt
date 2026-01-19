@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from Realme GT Neo 3.
+## are from Realme GT Neo 3 (RMX3563_14.0.0.2200(EX01)
 
 apusys.img;AB
 audio_dsp.img;AB

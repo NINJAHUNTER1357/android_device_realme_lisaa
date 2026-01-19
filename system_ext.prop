@@ -8,11 +8,6 @@ ro.config.vc_call_vol_steps=9
 persist.sys.sf.color_saturation=1.0
 sys.brightness.disable_gamma_conversion=true
 
-# IMS
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
-
 # Media
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.media.recorder-max-base-layer-fps=60

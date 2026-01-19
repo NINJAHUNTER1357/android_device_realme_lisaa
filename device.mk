@@ -1,4 +1,3 @@
-#
 # SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -36,11 +35,6 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
     update_verifier
-
-# Alert slider
-PRODUCT_PACKAGES += \
-    KeyHandler \
-    tri-state-key-calibrate
 
 # API
 BOARD_SHIPPING_API_LEVEL := 31
@@ -132,6 +126,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Fingerprint
+$(call soong_config_set_bool,surfaceflinger,has_mtk_udfps,true)
+$(call soong_config_set,surfaceflinger,mtk_dim_layer,OnScreenFingerprintPressedIcon)
+
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.oplus
 
@@ -158,12 +155,7 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek-recovery
 
 # IMS
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml \
-    $(LOCAL_PATH)/configs/permissions/mediatek-common.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/mediatek-common.xml \
-    $(LOCAL_PATH)/configs/permissions/mediatek-framework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/mediatek-framework.xml \
-    $(LOCAL_PATH)/configs/permissions/mediatek-ims-base.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/mediatek-ims-base.xml \
-    $(LOCAL_PATH)/configs/permissions/mediatek-ims-common.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/mediatek-ims-common.xml
+$(call inherit-product, vendor/mediatek/ims/ims.mk)
 
 $(call inherit-product, hardware/oplus/oplus-fwk/oplus-fwk.mk)
 
@@ -234,7 +226,6 @@ PRODUCT_PACKAGES += \
     OPlusSettingsProviderResTarget \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget \
-    OPlusTelephonyResTarget \
     OPlusTetheringConfigResTarget \
     OPlusWifiResTarget
 
@@ -242,7 +233,8 @@ PRODUCT_PACKAGES += \
     ApertureResTarget \
     LineageSDKResTarget \
     LineageSettingsProviderResTarget \
-    OplusDozeResTarget 
+    OplusDozeResTarget \
+    LineageSystemUIResTarget
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
