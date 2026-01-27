@@ -1,4 +1,6 @@
 #!/bin/bash
+## Clone common mtk Ims
+git clone https://github.com/techyminati/android_vendor_mediatek_ims.git vendor/mediatek/ims
 ## MTK GED KPI support to fix broken Mediatek gpufreq
 cd frameworks/native  
 git fetch https://github.com/NINJAHUNTER1357/android_frameworks_native.git
